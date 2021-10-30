@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@media screen and (min-width: 1280px)
+{
+    body
+    {
+        font-family: "Arial", "Helvetica", "sans-serif";
+        line-height: 20px;
+    }
+    #title, #payoff
+    {
+        font-family: "Notable" , sans-serif;
+        letter-spacing: 3px;
+    }
+    /*Index*/
+
+    .hamburgerIcon, #hamburgerIconTrigger
+    {
+        display:none;
+    }
+    .navigation ul li
+    {
+        display: inline;
+        
+    }
+    .navigation li
+    {
+        margin-left: 200px;
+        margin-right: auto;
+    }
+    .navigation ul li:hover
+    {
+        background-color: #7fffd4;
+    }
+    .navigation ul li::selection
+    {
+        color: #ff0000;
+    }
+    #indexAside
+    {
+        clear: both;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 3;
+        align-items: center;
+        text-align: center;
+        position:fixed;
+        background-color: #ffc72b;
+        right: 0%;
+        top: 15rem;
+        z-index: 10;
+
+    }
+    #indexAside strong
+    {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: -30px;
+    }
+    #indexAside ol li
+    {
+        margin-top: 3em;
+    }
+    .flexParent
+    {
+        display:flex;
+        flex-direction:column;
+    }
+    #greeceArticle, #italyArticle, #swedenArticle
+    {
+        justify-content: flex-start;
+    }
+    #greeceParagraph, #italyParagraph, #swedenParagraph
+    {
+        text-align:justify;
+        width: 60%;
+        text-indent: 30px;
+        word-spacing: 2px;
+    }
+    #greeceSection, #italySection, #swedenSection
+    {
+        clear: both;
+    }
+    #greecePhoto, #italyPhoto, #swedenPhoto
+    {
+        clear: both;
+        float: right;
+        margin-right: 20%;
+        position:relative;
+        bottom: 100px;
+        width: 200px;
+    }
+
+    #indexFooter
+    {
+        float:left;
+        top: 10px;
+    }
+
+    #cookieStatement
+    {
+        text-transform: uppercase;
+        position:fixed;
+        bottom: 0px;
+        right: 0px;
+        text-align: center;
+        background-color: #FA0;
+        clear: both;
+        float: right;
+        color: #FFF;
+        opacity: 50%;
+        z-index: 9999;
+        text-transform: uppercase;
+    }
+
+    /*Best Destinations*/
+    #gridContainer
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
+    .articles:nth-of-type(1)
+    {
+        order: 2;
+    }
+    .articles:nth-of-type(2)
+    {
+        order: 1;
+    }
+    .articles:nth-of-type(3)
+    {
+        order: 3;
+    }
+    .articles:nth-of-type(4)
+    {
+        order: 5;
+    }
+    .articles:nth-of-type(5)
+    {
+        order: 4;
+    }
+    .articles:nth-of-type(6)
+    {
+        order: 6;
+    }
+    #article1
+    {
+        grid-column: 2;
+        grid-row: 1/3;
+    }
+    #article4
+    {
+        grid-column: 3 / 4;
+    }
+    #article5
+    {
+        grid-row: 2 / 4;
+    }
+    #article6
+    {
+        grid-column: 2 / 4;
+    }
+    .paragraphs::first-letter
+    {
+        /*color: ymck(0%, 22%, 83%, 0%); Does not work.*/
+        color: #ffc72b;
+        font-size: 2em;
+    }
+    #bestDestinationsAside img
+    {
+        margin-left: 10%;
+    }
+
+    /*Tickets*/
+    #ticketsAside
+    {
+        position:relative;
+        clear: both;
+        float: right;
+        bottom: 550px;
+        margin-bottom: -550px;
+        width:300px;
+    }
+    tr > td, tr > th
+    {
+        text-align: center;
+        border-color: #000;
+        border-style: double;
+        border-width: 1px;
+    }
+    .tableRow:nth-child(even)
+    {
+        background-color: #fff;
+    }
+    .tableRow:nth-child(odd)
+    {
+        background-color: #cff;
+    }
+    td:first-child
+    {
+        background-color: #ff0;
+    }
+    table {
+        width: 65%;
+        border-collapse: collapse;
+    }
+    #ticketsFooter
+    {
+        clear: both;
+    }
+
+    /*Contact*/
+    #contactAside
+    {
+        clear: both;
+        float: right;
+    }
+    #contactInfo h3
+    {
+        display: inline;
+        margin-left: 30px;
+    }
+    #contactFieldset
+    {
+        display: grid;
+        grid-column: auto;
+        height: 850px;
+    }
+    #name, #email
+    {
+        height: 20px;
+    }
+    #message
+    {
+        height: 50px;
+    }
+    #submit
+    {
+        height: 30px;
+        width: 100px;
+    }
+    #contactAside
+    {
+        display: grid;
+        clear:both;
+        float:right;
+    }
+    #contactFooter
+    {
+        clear:both;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1279px)
+{
+    body
+    {
+        font-family: "Arial", "Helvetica", "sans-serif";
+        line-height: 20px;
+    }
+    #title, #payoff
+    {
+        font-family: "Notable" , sans-serif;
+        letter-spacing: 3px;
+    }
+    .hamburgerIcon, #hamburgerIconTrigger
+    {
+        display:none;
+    }
+    .navigation
+    {
+        display: flex;
+    }
+    .navigation ul li
+    {
+        display: inline;
+        
+    }
+    .navigation li
+    {
+        margin-left: 200px;
+        margin-right: auto;
+    }
+    .navigation ul li:hover
+    {
+        background-color: #7fffd4;
+    }
+    .navigation ul li::selection
+    {
+        color: #ff0000;
+    }
+    #videoMp4
+    {
+        position: relative;
+        top: 20px;
+    }
+    #indexAside
+    {
+        position: fixed;
+        clear: both;
+        display: flex;
+        flex-direction:column;
+        flex-grow: 3;
+        background-color: rgba(255, 199, 43, 0.6);
+        margin-left: -10px;
+        margin-right: -10px;
+        width: 1500px;
+        bottom: 290px;
+        z-index: 10;
+    }
+    #indexAside strong
+    {
+        text-align: center;
+    }
+    #indexAside ol li
+    {
+        float: left;
+        margin-left: 130px;
+    }
+    .flexParent
+    {
+        display:flex;
+        flex-direction:column;
+    }
+    #greeceArticle
+    {
+        order: 3;
+    }
+    #italyArticle
+    {
+        order: 2;
+    }
+    #swedenArticle
+    {
+        order: 1;
+    }
+    #greeceArticle, #italyArticle, #swedenArticle
+    {
+        justify-content: flex-start;
+    }
+    #greeceParagraph, #italyParagraph, #swedenParagraph
+    {
+        text-align:justify;
+    }
+    #greeceSection, #italySection, #swedenSection
+    {
+        clear: both;
+    }
+    #greecePhoto, #italyPhoto, #swedenPhoto
+    {
+        clear: both;
+        float: left;
+        position:relative;
+        width: 100px;
+    }
+
+    #indexFooter
+    {
+        float:left;
+        top: 10px;
+    }
+
+    #cookieStatement
+    {
+        position:fixed;
+        bottom: 0px;
+        right: 0px;
+        text-align: center;
+        background-color: #FA0;
+        clear: both;
+        float: right;
+        color: #FFF;
+        opacity: 50%;
+        z-index: 9999;
+        text-transform: uppercase;
+    }
+
+    /*Best Destinations*/
+    #gridContainer
+    {
+        display: grid;
+        align-items: center;
+    }
+    .articles:nth-of-type(1)
+    {
+        order: 1;
+    }
+    .articles:nth-of-type(2)
+    {
+        order: 2;
+    }
+    .articles:nth-of-type(3)
+    {
+        order: 3;
+    }
+    .articles:nth-of-type(4)
+    {
+        display: none;
+    }
+    .articles:nth-of-type(5)
+    {
+        order: 4;
+    }
+    .articles:nth-of-type(6)
+    {
+        order: 6;
+    }
+    #article1
+    {
+        grid-area: 1/1/auto/auto;
+    }
+    #article2
+    {
+        grid-area: 1/2;
+    }
+    #article6
+    {
+       grid-area: 3/1/auto/span 2;
+    }
+    .paragraphs::first-letter
+    {
+        color: #ffc72b;
+        font-size: 2em;
+    }
+    #product3
+    {
+        display:none;
+    }
+    #bestDestinationsAside img
+    {
+        margin-left: 10%;
+    }
+
+    /*Tickets*/
+    #ticketProduct1
+    {
+        display: none;
+    }
+    #copyrightInfo
+    {
+        margin-bottom: 10px;
+    }
+    td, th
+    {
+        text-align: center;
+        border-color: #000;
+        border-style: double;
+        border-width: 1px;
+    }
+    table
+    {
+        border-collapse: collapse;
+    }
+    td:first-child
+    {
+        background-color: #ff0;
+    }
+    .tableRow:nth-child(even)
+    {
+        background-color: #fff;
+    }
+    .tableRow:nth-child(odd)
+    {
+        background-color: #cff;
+    }
+    #ticketsFooter
+    {
+        clear:both;
+    }
+
+    /*Contact*/
+    #contactInfo h3
+    {
+        display: inline;
+        margin-left: 30px;
+    }
+    #contactFieldset
+    {
+        display: grid;
+        height: 850px;
+    }
+    #name, #email
+    {
+        height: 20px;
+    }
+    #submit
+    {
+        height: 30px;
+        width: 100px;
+    }
+    #message
+    {
+        height: 50px;
+    }
+    #contactAside
+    {
+        display: grid;
+        clear:both;
+        float:right;
+    }
+    #contactFooter
+    {
+        clear:both;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    body
+    {
+        font-family: "Arial", "Helvetica", "sans-serif";
+        line-height: 20px;
+    }
+    #title, #payoff
+    {
+        font-family: "Notable" , sans-serif;
+        letter-spacing: 3px;
+    }
+    #hamburgerIconTrigger
+    {
+        display:none;
+    }
+    .hamburgerIcon
+    {
+        clear: both;
+        float: right;
+        position:relative;
+        bottom:100px;
+        width: 30px;
+        height: 30px;
+    }
+    #videoMp4
+    {
+        display:none;
+    }
+    #logo
+    {
+        display:none;
+    }
+    .navigation
+    {
+        display: none;
+    }
+    #hamburgerIconTrigger:checked + .navigation
+    {
+        display: block;
+        clear: both;
+        float: right;
+        text-align: left;
+        width: 100px;
+        position: relative;
+        bottom: 90px;
+        z-index: 11;
+    }
+    .hamburgerIcon:hover
+    {
+        color: #0000ff;
+    }
+    .navigation ul li
+    {
+        display:block;
+    }
+    .navigation li
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navigation ul li:hover
+    {
+        background-color: #7fffd4;
+    }
+    .navigation ul li::selection
+    {
+        color: #ff0000;
+    }
+    #indexAside
+    {
+        position: fixed;
+        clear: both;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(255, 199, 43, 0.6);
+        width: 500px;
+        margin-left: -10px;
+        font-size: x-small;
+        z-index: 10;
+    }
+    #indexAside strong
+    {
+        text-align: center;
+    }   
+    #indexAside ol li
+    {
+        float: left;
+        margin-left: 20px;
+        font-size: x-small;
+    }
+    .flexParent
+    {
+        display:flex;
+        flex-direction:column;
+    }
+    #greeceArticle
+    {
+        order: 3;
+    }
+    #italyArticle
+    {
+        order: 2;
+    }
+    #swedenArticle
+    {
+        order: 1;
+    }
+    #greeceArticle, #italyArticle, #swedenArticle
+    {
+        justify-content: flex-start;
+        margin-top: 70px;
+    }
+    #greeceParagraph, #italyParagraph, #swedenParagraph
+    {
+        clear: both;
+        float: left;
+    }
+    #greeceSection, #italySection, #swedenSection
+    {
+        display: flex;
+        clear: both; 
+    }
+    #swedenPhoto, #italyPhoto, #greecePhoto
+    {
+        position:relative;
+        width: 100px;
+        margin-left: 40%;
+    }
+    #greeceFooter, #italyFooter, #swedenFooter 
+    {
+        position: relative;
+        top:50px;
+        margin-bottom: 50px;
+    }
+    #greeceMoreinfo, #italyMoreinfo, #swedenMoreinfo
+    {
+        position: relative;
+        top: 50px;
+    }
+
+    #indexFooter
+    {
+        float:left;
+        top: 10px;
+    }
+
+    #cookieStatement
+    {
+        position:fixed;
+        bottom: 0px;
+        right: 0px;
+        text-align: center;
+        background-color: #FA0;
+        clear: both;
+        float: right;
+        color: #FFF;
+        opacity: 50%;
+        z-index: 9999;
+        text-transform: uppercase;
+    }
+
+    /*Best Destinations*/
+
+    .articles:nth-of-type(1)
+    {
+        grid-area: article1;
+    }
+    .articles:nth-of-type(2)
+    {
+        grid-area: article2;
+    }
+    .articles:nth-of-type(3)
+    {
+        grid-area: article3;
+    }
+    .articles:nth-of-type(4)
+    {
+        display: none;
+    }
+    .articles:nth-of-type(5)
+    {
+        grid-area: article5;
+    }
+    .articles:nth-of-type(6)
+    {
+        display: none;
+    }
+    .paragraphs::first-letter
+    {
+        color: #ffc72b;
+        font-size: 2em;
+    }
+    #gridContainer
+    {
+        display: grid;
+        grid-template-areas:
+            'article5'
+            'article3'
+            'article2'
+            'article1';
+        top:100px;
+    }
+
+    /*Tickets*/
+    td, th
+    {
+        text-align: center;
+        border-color: #000;
+        border-style: double;
+        border-width: 1px;
+    }
+    table {
+        width: 65%;
+        border-collapse: collapse;
+    }
+    .tableRow:nth-child(even)
+    {
+        background-color: #fff;
+    }
+    .tableRow:nth-child(odd)
+    {
+        background-color: #cff;
+    }
+    td:first-child
+    {
+        background-color: #ff0;
+    }
+    #copyrightInfo
+    {
+        margin-bottom: 10px;
+    }
+    #ticketsFooter
+    {
+        clear: both;
+    }
+
+    /*Contact*/
+    #contactInfo h3
+    {
+        display: inline;
+        margin-left: 5px;
+        font-size: x-small;
+    }
+    #contactFieldset
+    {
+        display: grid;
+        grid-column: auto;
+        position: relative;
+        bottom: 450px;
+        height: 850px;
+    }
+    #name, #email
+    {
+        height: 20px;
+    }
+    #message
+    {
+        height: 50px;
+    }
+    #submit
+    {
+        height: 30px;
+        width: 100px;
+    }
+    #contactAside
+    {
+        position: relative;
+        top: 880px;
+    }
+    #contactAside img
+    {
+        display: block;
+        width: 150px;
+    }
+    #contactFooter
+    {
+        clear: both;
+    }
+}
